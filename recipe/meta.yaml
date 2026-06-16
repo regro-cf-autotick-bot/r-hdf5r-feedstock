@@ -43,10 +43,10 @@ requirements:
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
   host:
-    - hdf5
     - r-base
     - r-bit64
     - r-r6
+    - hdf5
     - zlib
   run:
     - r-base
@@ -54,12 +54,19 @@ requirements:
     - r-r6
 
 test:
+  requires:
+    - r-testthat
+  source_files:
+    - tests/
   commands:
-    - $R -e "library('hdf5r')"  # [not win]
-    - "\"%R%\" -e \"library('hdf5r')\""  # [win]
+    - R -e "library('hdf5r')"                                                         # [not win]
+    - R -e "testthat::test_file('tests/testthat.R', stop_on_failure=TRUE)"            # [not win]
+    - "\"%R%\" -e \"library('hdf5r')\""                                               # [win]
+    - "\"%R%\" -e \"testthat::test_file('tests/testthat.R', stop_on_failure=TRUE)\""  # [win]
 
 about:
-  home: https://cran.r-project.org/web/packages/hdf5r
+  home: https://hhoeflin.github.io/hdf5r/
+  dev_url: https://github.com/hhoeflin/hdf5r/
   license: Apache-2.0
   license_file: LICENSE
   summary: |
