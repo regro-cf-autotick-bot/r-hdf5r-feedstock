@@ -12,6 +12,7 @@ source:
   sha256: e2e736b66837f516ac3e31e7bbf41c2a0e37431757df983442ce0062dc13ff64
   patches:
     - patches/0001-minimal-libs-ucrt.patch
+    - patches/0002-hdf5-2-compatibility.patch
 
 build:
   number: 3
