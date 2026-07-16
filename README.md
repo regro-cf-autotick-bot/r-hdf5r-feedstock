@@ -3,7 +3,7 @@ About r-hdf5r-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-hdf5r-feedstock/blob/main/LICENSE.txt)
 
-Home: https://cran.r-project.org/web/packages/hdf5r
+Home: https://hhoeflin.github.io/hdf5r/
 
 Package license: Apache-2.0
 
@@ -12,11 +12,20 @@ large amounts of data. This package provides a nearly feature complete,
 object oriented  wrapper for the HDF5 API
 
 
+Development: https://github.com/hhoeflin/hdf5r/
+
 Current build status
 ====================
 
 
-<table>
+<table><tr>
+    <td>GitHub Actions</td>
+    <td>
+      <a href="https://github.com/conda-forge/r-hdf5r-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/r-hdf5r-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+      </a>
+    </td>
+  </tr>
     
   <tr>
     <td>Azure</td>
@@ -30,87 +39,73 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_r_base4.4</td>
+              <td>osx_64_hdf51.14.6r_base4.4</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3413&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-hdf5r-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.4" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-hdf5r-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_hdf51.14.6r_base4.4" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_r_base4.5</td>
+              <td>osx_64_hdf51.14.6r_base4.5</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3413&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-hdf5r-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.5" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-hdf5r-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_hdf51.14.6r_base4.5" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_r_base4.4</td>
+              <td>osx_64_hdf52r_base4.4</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3413&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-hdf5r-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_r_base4.4" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-hdf5r-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_hdf52r_base4.4" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_r_base4.5</td>
+              <td>osx_64_hdf52r_base4.5</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3413&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-hdf5r-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_r_base4.5" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-hdf5r-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_hdf52r_base4.5" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_r_base4.4</td>
+              <td>osx_arm64_hdf51.14.6r_base4.4</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3413&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-hdf5r-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_r_base4.4" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-hdf5r-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_hdf51.14.6r_base4.4" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_r_base4.5</td>
+              <td>osx_arm64_hdf51.14.6r_base4.5</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3413&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-hdf5r-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_r_base4.5" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-hdf5r-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_hdf51.14.6r_base4.5" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_r_base4.4</td>
+              <td>osx_arm64_hdf52r_base4.4</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3413&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-hdf5r-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.4" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-hdf5r-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_hdf52r_base4.4" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_r_base4.5</td>
+              <td>osx_arm64_hdf52r_base4.5</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3413&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-hdf5r-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.5" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-hdf5r-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_hdf52r_base4.5" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_r_base4.4</td>
+              <td>win_64_hdf51.14.6r_base4.4</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3413&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-hdf5r-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_r_base4.4" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-hdf5r-feedstock?branchName=main&jobName=win&configuration=win%20win_64_hdf51.14.6r_base4.4" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_r_base4.5</td>
+              <td>win_64_hdf51.14.6r_base4.5</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3413&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-hdf5r-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_r_base4.5" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_r_base4.4</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3413&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-hdf5r-feedstock?branchName=main&jobName=win&configuration=win%20win_64_r_base4.4" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_r_base4.5</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3413&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-hdf5r-feedstock?branchName=main&jobName=win&configuration=win%20win_64_r_base4.5" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-hdf5r-feedstock?branchName=main&jobName=win&configuration=win%20win_64_hdf51.14.6r_base4.5" alt="variant">
                 </a>
               </td>
             </tr>
@@ -197,12 +192,12 @@ it is possible to build and upload installable packages to the
 [conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
-To manage the continuous integration and simplify feedstock maintenance
+To manage the continuous integration and simplify feedstock maintenance,
 [conda-smithy](https://github.com/conda-forge/conda-smithy) has been developed.
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
-For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
+For more information, please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
@@ -229,7 +224,7 @@ merged, the recipe will be re-built and uploaded automatically to the
 everybody to install and use from the `conda-forge` channel.
 Note that all branches in the conda-forge/r-hdf5r-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
-on branches in forks and branches in the main repository should only be used to
+on branches in forks, and branches in the main repository should only be used to
 build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
