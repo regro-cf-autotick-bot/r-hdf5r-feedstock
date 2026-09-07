@@ -1,4 +1,4 @@
-{% set version = "1.3.12" %}
+{% set version = "1.3.15" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/hdf5r_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/hdf5r/hdf5r_{{ version }}.tar.gz
-  sha256: e2e736b66837f516ac3e31e7bbf41c2a0e37431757df983442ce0062dc13ff64
+  sha256: 774834a14b1ec69a74cdd6aa55a2e788c841f3828a03e2cb392a91ef7b5d79d3
   patches:
     - patches/0001-minimal-libs-ucrt.patch
     {% if hdf5 == "2" %}
@@ -20,7 +20,7 @@ source:
     {% endif %}
 
 build:
-  number: 3
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
